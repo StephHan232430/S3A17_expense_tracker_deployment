@@ -4,7 +4,7 @@
       <button type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
         {{#unless filter}}
-        類別
+        所有類別
         {{/unless}}
         {{#if filter}}
         {{{ filterName }}}
@@ -12,6 +12,7 @@
         <span class="sr-only">Toggle Dropdown</span>
       </button>
       <div class="dropdown-menu btn-block text-center">
+        <a class="dropdown-item" href="/">所有類別</a>
         <a class="dropdown-item" href="/records/filter?category=household">家居物業</a>
         <a class="dropdown-item" href="/records/filter?category=transportation">交通出行</a>
         <a class="dropdown-item" href="/records/filter?category=entertainment">休閒娛樂</a>
